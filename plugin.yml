@@ -1,0 +1,19 @@
+name: LibLott
+main: io.github.jagofr.liblott.liblott
+version: 0.1-SNAPSHOT
+description: Lottery Plugin
+author: Jagofr
+commands:
+  lottery:
+    description: Enters the user into the lottery pool based on selected bet in hand.
+    usage: "Usage: '/lottery' to select your entry. '/lottery confirm' to finalize bet."
+  lott:
+    descriptions: Admin Command.
+    usage: "Usage: '/lott reload' to reload the plugin or '/lott play' to play the lottery early."
+    permission: lottery.lott
+    permission-message: "Insufficient Permissions for this command"
+  debug:
+    description: Shows debugging information for this plugin.
+    usage: "Usage: '/debug'"
+    permission: lottery.debug
+    permission-message: "Insufficient Permissions for this command"
